@@ -1,18 +1,8 @@
+# para abrir o programa o console utilize iex -S mix
+# Utilize recompile para o shell recarregar os codigos
 defmodule Cards do
-  @moduledoc """
-  Documentation for `Cards`.
-  """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Cards.hello()
-      :world
-
-  """
-  def hello do
-    "Hi There!"
+  def create_deck do
+    # A convenção diz que devemos sempre utilizar aspas duplas
+    ["Ace", "Two", "Three"]
   end
 end
