@@ -1,8 +1,25 @@
-# para abrir o programa o console utilize iex -S mix
-# Utilize recompile para o shell recarregar os codigos
+
 defmodule Cards do
+
   def create_deck do
-    # A convenção diz que devemos sempre utilizar aspas duplas
-    ["Ace", "Two", "Three"]
+    values = ["Ace", "Two", "Three", "Four", "Five"]
+    suits = ["Spades", "Clubs", "Hearts", "Diamonds"]
+
+    # Comprehension
+    for suit <- suits, value <- values do
+      "#{value} of #{suit}"
+    end
+  end
+
+  def shuffle(deck) do
+    Enum.shuffle( deck);
+  end
+
+  def contains?(deck, hand) do
+    Enum.member?(deck, hand);
+  end
+
+  def deal(deck, hand_size) do
+    Enum.split(deck, hand_size)
   end
 end
