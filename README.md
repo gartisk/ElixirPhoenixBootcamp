@@ -13,3 +13,6 @@ Para obter as dependencias, execute no console:
 
 Para ver a documentação use o comando a baixo na pasta do projeto
     mix docs
+
+Para executar os testes:
+    mix test
