@@ -7,3 +7,6 @@ Para executar o projeto:
 
 Para recompilar o projeto use:
     recompile
+
+Para obter as dependencias, execute no console:
+    mix deps.get
