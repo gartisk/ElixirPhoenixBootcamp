@@ -5,6 +5,9 @@ Para executar o projeto:
     cd cards
     iex -S mix
 
+Para criar um novo projeto:
+    mix new identicon
+
 Para recompilar o projeto use:
     recompile
 
