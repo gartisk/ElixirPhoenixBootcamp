@@ -37,3 +37,20 @@ Duas formas de se criar duplas:
 
     Para acessar um valor:
     colors[:primary]
+
+## Projeto Discuss ##
+
+Como o curso não é tão recente é possível pegar umas mensagens de erro ao rodar o comando do mix ecto.create,
+para que isso não aconteça instale a versão nova do phoenix seguindo os comando abaixo
+
+Se você instalou desinstale a versão já instalada
+    
+    mix archive.uninstall phoenix_new
+
+Instale uma versão recente do phoenix( versão estável atual 1.5.7 )
+    
+    mix archive.install hex phx_new 1.5.7
+
+Crie o projeto com o comando abaixo:
+    
+    mix phi.new discuss
