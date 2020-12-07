@@ -53,4 +53,22 @@ Instale uma versão recente do phoenix( versão estável atual 1.5.7 )
 
 Crie o projeto com o comando abaixo:
     
-    mix phi.new discuss
+    mix phx.new discuss
+
+Para debugar o Phoenix
+
+    iex -S mix phx.server
+
+Para visualizar o html gerado no exemplo do video 8:60
+
+    DiscussWeb.PageView.render "index.html"
+
+### Migrate ###
+
+Para criar o arquivo de migration, use comando abaixo
+    
+    mix ecto.gen.migration add_topics]
+
+Para executar migrate:
+    
+    mix ecto.migrate
